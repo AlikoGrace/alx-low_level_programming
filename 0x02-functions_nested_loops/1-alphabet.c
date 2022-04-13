@@ -1,20 +1,18 @@
 #include "main.h"
-
 /**
- * print_alphabet - print alphabet lowercase
- *
- * Return: Always 0.
+ * main - Entry for main function
+ * Description: Program to print _putchar, followed by a line
+ * Return: 0
  */
-
-void print_alphabet(void)
+int main(void)
 {
-char alphabet;
-
-for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
+char c[9] = "_putchar";
+int i = 0;
+while (i < 8)
 {
-_putchar(alphabet);
+_putchar(c[i]);
+i++;
 }
-
 _putchar('\n');
-
+return (0);
 }
